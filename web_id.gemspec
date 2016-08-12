@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'web_id/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'webid'
+  spec.name          = 'web-id'
   spec.version       = WebID::VERSION
   spec.authors       = ['Kryptykfysh']
   spec.email         = ['kryptykfysh@kryptykfysh.co.uk']
@@ -30,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 0.42', '>= 0.42.0'
   spec.add_development_dependency 'simplecov', '~> 0.12', '>= 0.12.0'
   spec.add_development_dependency 'yard', '~> 0.9', '>= 0.9.5'
+
+  spec.add_runtime_dependency 'rest-client', '~> 2.0', '>= 2.0.0'
 end
